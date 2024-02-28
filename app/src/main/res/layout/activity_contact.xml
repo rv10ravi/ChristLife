@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".Contact">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/topbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:elevation="4dp"
+    app:title="Contact Form"
+    app:titleTextColor="@color/white"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="680dp"
+    android:layout_marginTop="70dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/vvLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/purple"
+            app:cardCornerRadius="15dp">
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/response_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:checked="false"
+                android:text="Record your response "
+                android:textColor="@color/purple"
+                android:textFontWeight="900"/>
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:inputType="text"
+            android:text="Name"
+            android:textColor="@color/purple"/>
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:inputType="textEmailAddress"
+            android:text="Email"
+            android:textColor="@color/purple"/>
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Gender"
+            android:textFontWeight="700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_centerHorizontal="true"
+            android:outlineAmbientShadowColor="@color/purple"
+            android:outlineSpotShadowColor="@color/purple"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusedSearchResultHighlightColor="@color/purple"
+                android:outlineAmbientShadowColor="@color/purple"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:text="Male"
+                android:textColor="@color/purple"/>
+            <RadioButton android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:text="Female"
+                android:textColor="@color/purple"/>
+            <RadioButton android:id="@+id/radio_others"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:text="Others"
+                android:textColor="@color/purple"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/why_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Why Want To Contact ?"
+            android:textFontWeight="700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:orientation="horizontal">
+           <CheckBox android:id="@+id/checkbox_internship"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="20dp"
+               android:textColor="@color/purple"
+               android:textSize="15sp"
+               android:text="Internship" />
+           <CheckBox android:id="@+id/checkbox_job"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="20dp"
+               android:textColor="@color/purple"
+               android:textSize="15sp"
+               android:text="Job"/>
+           <CheckBox android:id="@+id/enquiry"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="20dp"
+               android:textColor="@color/purple"
+               android:textSize="15sp"
+               android:text="Enquiry"/>
+       </LinearLayout>
+
+        <TextView
+            android:id="@+id/expect_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="What Date You Expect Me To Contact You?"
+            android:textFontWeight="700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+        <FrameLayout
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <DatePicker
+                android:id="@+id/datepicker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:datePickerMode="calendar" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/pref_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Which Time?"
+            android:textFontWeight="700"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <TimePicker
+                android:id="@+id/timepicker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:timePickerMode="clock" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/whichstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Select State"
+            android:textFontWeight="700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/spinner_items"
+            android:pointerIcon="arrow" />
+
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Rate For App"
+            android:textFontWeight="700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:progressTint="@color/purple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:numStars="5"
+            android:stepSize="1.0" />
+
+
+        <TextView
+            android:id="@+id/not_upcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Notfification For Upcoming Projects"
+            android:textFontWeight="700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toggle"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp" />
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Submit "
+            app:rippleColor="#145AE6"/>
+
+
+    </LinearLayout>
+</ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/stat_sys_phone_call"
+        android:translationX="280dp"
+        android:translationY="600dp"
+        app:rippleColor="#145AE6"/>
+</RelativeLayout>

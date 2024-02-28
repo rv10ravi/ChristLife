@@ -15,6 +15,17 @@ class profile : AppCompatActivity() {
             intent.putExtra("Name", "Ravi")
             startActivity(intent)
         }
+
+        val button3: Button = findViewById(R.id.button3)
+        button3.setOnClickListener {
+            val intent = Intent(this@profile, Contact::class.java)
+            startActivity(intent)
+        }
+        val button5: Button = findViewById(R.id.button5)
+        button5.setOnClickListener {
+            val intent = Intent(this@profile, AboutChrist::class.java)
+            startActivity(intent)
+        }
     }
 
 

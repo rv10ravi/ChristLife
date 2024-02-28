@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_items">
+        <item>Ahmedabad</item>
+        <item>Bangalore</item>
+        <item>Chennai</item>
+        <item>Delhi</item>
+        <item>Hyderabad</item>
+        <item>Kolkata</item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+
+    </string-array>
+</resources>
