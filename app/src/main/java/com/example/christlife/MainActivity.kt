@@ -4,8 +4,12 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.ContextMenu
+import android.view.MenuItem
+import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +34,39 @@ class MainActivity : AppCompatActivity() {
             val instagramUri = Uri.parse("https://www.instagram.com/christ_university_bangalore/") // Replace with your Instagram link
             val instagramIntent = Intent(Intent.ACTION_VIEW, instagramUri)
             startActivity(instagramIntent)
+        }
+
+        // Registering context menu for imageButton2
+        registerForContextMenu(imageButton2)
+
+    }
+
+    override fun onCreateContextMenu(menu: ContextMenu?, v: View?, menuInfo: ContextMenu.ContextMenuInfo?) {
+        super.onCreateContextMenu(menu, v, menuInfo)
+        menuInflater.inflate(R.menu.context_menu, menu)
+    }
+
+    override fun onContextItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.option1 -> {
+                val instagramUri = Uri.parse("https://www.instagram.com/christ_university_bangalore/")
+                val instagramIntent = Intent(Intent.ACTION_VIEW, instagramUri)
+                startActivity(instagramIntent)
+                return true
+            }
+            R.id.option2 -> {
+                val instagramUri = Uri.parse("https://www.instagram.com/christ_university_lavasa/")
+                val instagramIntent = Intent(Intent.ACTION_VIEW, instagramUri)
+                startActivity(instagramIntent)
+                return true
+            }
+            R.id.option3 -> {
+                val instagramUri = Uri.parse("https://www.instagram.com/christuniversity_kengeri/")
+                val instagramIntent = Intent(Intent.ACTION_VIEW, instagramUri)
+                startActivity(instagramIntent)
+                return true
+            }
+            else -> return super.onContextItemSelected(item)
         }
     }
 }

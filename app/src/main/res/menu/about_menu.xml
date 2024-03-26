@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/welcomepage"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Welcome Page" />
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/baseline_arrow_circle_down_24"
+        android:title="About" />
+    <item
+        android:id="@+id/contact"
+        android:icon="@drawable/baseline_access_time_24"
+        android:title="Contact us" />
+</menu>

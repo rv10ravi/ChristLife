@@ -8,20 +8,31 @@
     android:backgroundTint="#6ABAC8BE"
     tools:context=".profile">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#6ABAC8BE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Christ Life" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginEnd="145dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="25dp"
         android:text="Welcome Ravi ! "
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
