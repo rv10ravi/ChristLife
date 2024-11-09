@@ -1,6 +1,4 @@
-Certainly! Below is the complete `README.md` content, ready to be copied and pasted into your `README.md` file:
 
-```markdown
 # ChristLife - Android App
 
 ChristLife is a mobile application built for students to log in and view their profiles. Developed using Kotlin and XML in Android Studio, this app provides a user-friendly interface for students to manage and interact with their profile information in a Christian-centered environment.
