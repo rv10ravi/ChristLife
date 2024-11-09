@@ -53,9 +53,6 @@ If you're using Firebase for user authentication, follow these steps:
 
 Click on the **Run** button in Android Studio to compile and run the app on your device or emulator.
 
-## Screenshots
-
-(Optional) Add some screenshots of your app's UI here to show how it looks.
 
 ## Contributing
 
